@@ -1,0 +1,64 @@
+:host {
+  background-image: linear-gradient(to bottom, #0f0f0f, #1e1e1e,#2a2a2a);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:host mat-card {
+  height: fit-content;
+}
+
+  .login-card-icon {
+    /* background-color: #2D9BB5; */
+    background-color: #333333;
+    border-radius: 5px !important;
+    text-align: center;
+    margin-top:-50px;
+    margin-left:20px;
+  }
+
+  .mat-form-field {
+    background: #2a2a2a !important;
+    width: 100%;
+    min-width: 300px;
+  }
+
+  .mat-input-element{
+    background: #2a2a2a !important;
+  }
+
+  mat-card-title,
+  mat-card-content {
+    display: flex;
+    background: #2a2a2a !important;
+    justify-content: center;
+  }
+
+  .error {
+    padding: 16px;
+    width: 300px;
+    color: white;
+    background-color: red;
+  }
+
+  .button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header-pos{
+      background-color: blue;
+  }
+  .login-logo {
+      width: 80%;
+
+  }
+  .mat-card-avatar{
+      width: 300px;
+      height: auto;
+  }
+
+.color-adjust {
+    background: #2a2a2a !important;
+ }

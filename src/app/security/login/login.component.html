@@ -1,0 +1,53 @@
+<mat-card>
+  <mat-card-header class="card-header">
+    <div mat-card-avatar class="login-card-icon mat-elevation-z4">
+      <img class="login-logo" src="./assets/logo-sip.png" alt="unicoba">
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <form (submit)="login()">
+      <p>
+        <mat-form-field class="color-adjust">
+          <input maxlength="250" matInput #username="ngModel" minlength="6" maxlength="60" name="username" [(ngModel)]="obj.username"
+            pattern="[a-zA-Z_\-.@0-9]+" placeholder="Login" required>
+          <mat-error *ngIf="!username.valid">
+            Nome de usuário inválido
+          </mat-error>
+          <mat-error *ngIf="username.hasError('required')">
+            Campo obrigatório
+          </mat-error>
+          <mat-error *ngIf="username.hasError('minlength')">
+            O usuário precisa ter no mínimo 6 caracteres
+          </mat-error>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field>
+          <input maxlength="250" matInput type="password" #password="ngModel" name="password" minlength="6" maxlength="128"
+            [(ngModel)]="obj.password" required placeholder="Senha">
+          <mat-error *ngIf="!password.valid">
+              Senha inválida
+          </mat-error>
+          <mat-error *ngIf="password.hasError('required')">
+            Campo obrigatório
+          </mat-error>
+          <mat-error *ngIf="password.hasError('minlength')">
+            A senha precisa ter no mínimo 6 caracteres
+          </mat-error>
+        </mat-form-field>
+      </p>
+
+      <!-- <p *ngIf="error" class="error">
+        {{ error }}
+      </p> -->
+
+      <div class="button">
+        <div class="col-md-12" style="text-align: center !important;">
+          <button type="submit" mat-flat-button color="primary" [disabled]="!(password.valid && username.valid)">Entrar</button>
+        </div>
+      </div>
+
+    </form>
+  </mat-card-content>
+</mat-card>

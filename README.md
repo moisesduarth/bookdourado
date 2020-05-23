@@ -2,14 +2,14 @@
 
 Projeto utiliza algumas das seguintes tecnologias:
 
-Spring Tools
-Lombok
-MySQL
-Angular 9
-Tema do Creative
-Bootstrap 4
-Docker
-Swagger
+1. Spring Tools
+2. Lombok
+3. MySQL
+4. Angular 9
+5. Tema do Creative
+6. Bootstrap 4
+7. Docker
+8. Swagger
 
 ## Como rodar o projeto na sua máquina
 
@@ -23,7 +23,6 @@ Swagger
 
 ## Estrutura dos arquivos do front-end
 
-`
 ```
 diretorio-do-projeto
 ├── CHANGELOG.md
@@ -123,7 +122,7 @@ diretorio-do-projeto
 ├── tsconfig.json
 └── tslint.json
 ```
-`
+
 ## Navegadores suportados
 
 <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">

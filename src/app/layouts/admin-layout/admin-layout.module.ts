@@ -1,22 +1,17 @@
-import { NgModule } from "@angular/core";
-import { HttpClientModule } from "@angular/common/http";
-import { RouterModule } from "@angular/router";
-import { CommonModule } from "@angular/common";
-import { FormsModule } from "@angular/forms";
+import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
-import { AdminLayoutRoutes } from "./admin-layout.routing";
-import { DashboardComponent } from "../../pages/dashboard/dashboard.component";
-import { IconsComponent } from "../../pages/icons/icons.component";
-import { MapComponent } from "../../pages/map/map.component";
-import { NotificationsComponent } from "../../pages/notifications/notifications.component";
-import { UserComponent } from "../../pages/user/user.component";
-import { TablesComponent } from "../../pages/tables/tables.component";
-import { TypographyComponent } from "../../pages/typography/typography.component";
-// import { RtlComponent } from "../../pages/rtl/rtl.component";
+import { AdminLayoutRoutes } from './admin-layout.routing';
+import { DashboardComponent } from '../../pages/dashboard/dashboard.component';
 
-import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BookFormComponent } from 'src/app/pages/books/book-form/book-form.component';
 import { BookListComponent } from 'src/app/pages/books/book-list/book-list.component';
+import { UserFormComponent } from 'src/app/pages/user/user-form/user-form.component';
+import { UserListComponent } from 'src/app/pages/user/user-list/user-list.component';
 
 @NgModule({
   imports: [
@@ -28,15 +23,10 @@ import { BookListComponent } from 'src/app/pages/books/book-list/book-list.compo
   ],
   declarations: [
     DashboardComponent,
-    UserComponent,
-    TablesComponent,
-    IconsComponent,
-    TypographyComponent,
-    NotificationsComponent,
-    MapComponent,
+    UserFormComponent,
+    UserListComponent,
     BookFormComponent,
     BookListComponent
-    // RtlComponent
   ]
 })
 export class AdminLayoutModule {}

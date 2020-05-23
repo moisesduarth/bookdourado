@@ -12,5 +12,6 @@ export const CONSTANT_URL = {
     USER: 'users/',
     BOOK: 'books/',
     DASHBOARD: 'dashboard/',
+    LOGIN: '/users/login/',
 
 };
