@@ -23,6 +23,8 @@ Swagger
 
 ## Estrutura dos arquivos do front-end
 
+`
+```
 diretorio-do-projeto
 ├── CHANGELOG.md
 ├── documentation
