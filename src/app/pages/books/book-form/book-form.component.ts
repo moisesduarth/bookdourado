@@ -25,6 +25,7 @@ export class BookFormComponent extends AbstractFormComponent<Book, BookService> 
   }
 
   ngOnInit(): void {
+    super.ngOnInit();
   }
 
 }

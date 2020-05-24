@@ -80,6 +80,11 @@ const routes: Routes = [
         loadChildren: () => import('./pages/user/user.module').then(mod => mod.UserModule),
         canActivate: [AuthGuardService]
       },
+      {
+        path: 'book',
+        loadChildren: () => import('./pages/books/book.module').then(mod => mod.BookModule),
+        canActivate: [AuthGuardService]
+      },
     ]
   },
   // before login

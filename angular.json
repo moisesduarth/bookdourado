@@ -30,7 +30,9 @@
               "src/styles.scss",
               "node_modules/ngx-toastr/toastr.css",
               "src/assets/scss/black-dashboard.scss",
-              "src/assets/css/nucleo-icons.css"
+              "src/assets/css/nucleo-icons.css",
+              "src/assets/demo/demo.css",
+              "src/assets/demo/now-ui-kit.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true

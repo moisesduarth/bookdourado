@@ -24,7 +24,7 @@ export class AuthService extends AbstractCrudService<Login>{
   }
 
   login(obj) {
-    let login = obj.username;
+    let login = obj.login;
     let password = obj.password;
     return this.http.post<any>(`${APP_URL}users/login`, { login, password })
       .pipe(map(user => {
